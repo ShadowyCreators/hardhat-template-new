@@ -22,7 +22,7 @@ const config: HardhatUserConfig = {
       chainId: 1,
       forking: {
         url: process.env.ETHEREUM_ALCHEMY_API_KEY ? `https://eth-mainnet.g.alchemy.com/v2/${process.env.ETHEREUM_ALCHEMY_API_KEY}` : "https://ethereum-rpc.publicnode.com",
-        blockNumber: 22229838,
+        blockNumber: 22237750, // New Settler contract deployed at block: 22232509
       },
       accounts: Object.values(wallets).map((privateKey) => (
         {privateKey, balance: INITIAL_ETHER_BALANCE.toString() }
